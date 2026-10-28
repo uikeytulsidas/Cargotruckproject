@@ -1,0 +1,183 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cargo Truck Simulator Driver Policies</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+/* Layout: one readable column like a printed rulebook, with a sticky section switcher. */
+:root {
+  --bg: #f6f4ef;
+  --paper: #fffdf8;
+  --ink: #1d1f22;
+  --muted: #5b6168;
+  --rule: #dcd6ca;
+  --accent: #c2521a;
+  --accent-ink: #ffffff;
+  --display: "Saira Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --ui: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171a; --paper: #1c1f23; --ink: #ece8df; --muted: #a4a9ae; --rule: #343941; --accent: #f0883e; --accent-ink: #1a1208; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15171a; --paper: #1c1f23; --ink: #ece8df; --muted: #a4a9ae; --rule: #343941; --accent: #f0883e; --accent-ink: #1a1208; color-scheme: dark;
+}
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.62; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.wrap { max-width: 44rem; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 2.5rem 4rem; }
+header.top { display: grid; gap: .4rem; padding-block: 0 1.5rem; border-bottom: 3px solid var(--ink); }
+.kicker { font-family: var(--ui); font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); font-weight: 500; }
+h1 { font-family: var(--display); font-weight: 800; font-size: clamp(2.1rem, 6vw, 3rem); line-height: 1.02; margin: 0; text-wrap: balance; letter-spacing: .01em; }
+.meta { font-family: var(--ui); font-size: .9rem; color: var(--muted); }
+nav.switch { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); display: flex; gap: .5rem; flex-wrap: wrap; padding-block: .8rem; border-bottom: 1px solid var(--rule); }
+nav.switch a { font-family: var(--ui); font-size: .9rem; font-weight: 500; text-decoration: none; color: var(--ink); padding: .35rem .8rem; border: 1px solid var(--rule); border-radius: 999px; }
+nav.switch a:hover, nav.switch a:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+section.doc { padding-block: 2rem 1rem; }
+h2 { font-family: var(--display); font-weight: 800; font-size: 2rem; margin: 0 0 .25rem; letter-spacing: .01em; }
+h3 { font-family: var(--display); font-weight: 600; font-size: 1.3rem; margin: 2rem 0 .4rem; letter-spacing: .02em; }
+p, ul { margin: 0 0 1rem; }
+ul { padding-left: 1.2rem; }
+li { margin-bottom: .45rem; }
+a { color: var(--accent); }
+.summary { background: var(--paper); border: 1px solid var(--rule); border-left: 4px solid var(--accent); padding: 1rem 1.2rem; font-family: var(--ui); font-size: .95rem; line-height: 1.55; }
+.summary p:last-child { margin: 0; }
+table { width: 100%; border-collapse: collapse; font-family: var(--ui); font-size: .9rem; }
+.tablewrap { overflow-x: auto; margin: 0 0 1rem; }
+th, td { text-align: left; padding: .55rem .6rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-weight: 500; color: var(--muted); font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; }
+.contact { font-family: var(--ui); background: var(--paper); border: 1px solid var(--rule); padding: 1rem 1.2rem; display: grid; gap: .3rem; }
+.contact b { font-weight: 500; }
+footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-family: var(--ui); font-size: .85rem; color: var(--muted); }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+</style>
+</head><body>
+<div class="wrap">
+  <header class="top">
+    <span class="kicker">Tulshidas Uikey · Cargo Truck Simulator Driver</span>
+    <h1>Privacy Policy and Terms of Use</h1>
+    <span class="meta">Effective 23 October 2026 · applies to the Android game "Cargo Truck Simulator Driver"</span>
+  </header>
+
+  <nav class="switch" aria-label="Sections">
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#terms">Terms of Use</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="doc" id="privacy">
+    <h2>Privacy Policy</h2>
+    <div class="summary">
+      <p><b>In short:</b> your game progress stays on your phone. We do not ask for your name, phone number, email or contacts. Ads in the game are served by Google AdMob, which uses your device's advertising ID. Purchases are handled entirely by Google Play.</p>
+    </div>
+
+    <h3>1. Who we are</h3>
+    <p>"Cargo Truck Simulator Driver" (the "Game") is published by Tulshidas Uikey, an individual developer in India (the "Developer", "we", "us"). This policy explains what information is used when you play the Game and what choices you have.</p>
+
+    <h3>2. Information stored on your device</h3>
+    <p>The Game saves your progress on your phone only: cash balance, delivered routes and stars, trucks and paint you own, purchased items, and your settings (graphics, steering, sound). This file never leaves your device and we cannot see it. You can delete it at any time with <i>Settings → Reset progress</i> or by uninstalling the Game.</p>
+
+    <h3>3. Advertising (Google AdMob)</h3>
+    <p>The Game shows ads, including optional "watch an ad for a reward" videos. Ads are provided by Google AdMob. To show and measure ads, Google may collect and process:</p>
+    <ul>
+      <li>your device's advertising ID and basic device information (model, operating system, language);</li>
+      <li>IP address and approximate location derived from it;</li>
+      <li>ad interactions, such as which ads were shown and tapped;</li>
+      <li>diagnostic data, such as ad loading errors.</li>
+    </ul>
+    <p>We do not receive this information in a form that identifies you. Google uses it as described in <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
+    <p><b>Your choices:</b> where the law requires it (for example in the European Economic Area and the UK), the Game asks for your consent to personalised ads before any are shown, and you can change that choice later from the Game's settings. On Android you can also reset or delete your advertising ID under <i>Settings → Google → Ads</i>. Buying "Remove ads" or the "VIP pack" turns off the automatic full-screen ads, and rewards are then given without a video.</p>
+
+    <h3>4. Purchases (Google Play)</h3>
+    <p>In-app purchases are processed by Google Play. We never receive your card, UPI or bank details. The Game only receives a confirmation from Google Play that a purchase was completed, so it can unlock the item. Google's handling of payment data is covered by the <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&amp;ldt=privacynotice" rel="noopener">Google Payments Privacy Notice</a>.</p>
+
+    <h3>5. What we do not collect</h3>
+    <ul>
+      <li>We do not collect your name, email, phone number, contacts, photos or precise location.</li>
+      <li>The Game does not require an account or login.</li>
+      <li>We do not sell personal data.</li>
+    </ul>
+
+    <h3>6. Children</h3>
+    <p>The Game is intended for players aged 13 and over and is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child under 13 has used the Game in a way that caused information to be collected, contact us and we will help remove it.</p>
+
+    <h3>7. Your rights</h3>
+    <p>Under India's Digital Personal Data Protection Act, 2023, the EU/UK GDPR and similar laws, you may have the right to access, correct or erase personal data, to withdraw consent, and to raise a grievance. Because we do not hold personal data about you ourselves, most requests are handled by deleting your local save and adjusting your Google ad settings. For anything else, or to raise a grievance, use the contact details below; we aim to reply within 30 days.</p>
+
+    <h3>8. Data retention and security</h3>
+    <p>Local save data stays on your device until you reset it or uninstall the Game. Data processed by Google is kept according to Google's policies. We use Google's standard, secure software libraries for ads and purchases.</p>
+
+    <h3>9. Changes to this policy</h3>
+    <p>If we change this policy, we will update the effective date above and, for significant changes, show a notice in the Game.</p>
+  </section>
+
+  <section class="doc" id="terms">
+    <h2>Terms of Use</h2>
+    <div class="summary">
+      <p><b>In short:</b> play and enjoy the Game for personal use. In-game cash and items have no real-world value. Purchases follow Google Play's refund rules. The Game is a simulation, not driving training.</p>
+    </div>
+
+    <h3>1. Agreement</h3>
+    <p>By tapping "I agree" in the Game or by playing it, you accept these Terms and the Privacy Policy above. If you do not agree, please do not use the Game.</p>
+
+    <h3>2. Licence to play</h3>
+    <p>We give you a personal, non-exclusive, non-transferable licence to install and play the Game on devices you own or control, for non-commercial entertainment. You may not copy, sell, rent, reverse-engineer for commercial purposes, or redistribute the Game or its content, or use cheats, modified versions or automation that interfere with the Game, its ads or its purchases.</p>
+
+    <h3>3. Virtual cash and items</h3>
+    <ul>
+      <li>In-game cash, trucks, paints, decorations and other items are a limited licence to use content inside the Game. They have no monetary value and cannot be exchanged for real money or transferred to another person.</li>
+      <li>Items bought with real money are tied to the Google account used for the purchase. "Remove ads", the "VIP pack" and other one-time purchases are yours for life and can be restored by reinstalling the Game with the same Google account.</li>
+      <li>Consumable items, such as cash packs, are used up once delivered.</li>
+    </ul>
+
+    <h3>4. Payments and refunds</h3>
+    <p>All purchases are made through Google Play and are subject to the <a href="https://play.google.com/about/play-terms/" rel="noopener">Google Play Terms of Service</a> and <a href="https://support.google.com/googleplay/answer/2479637" rel="noopener">Google Play refund policies</a>. Prices are shown in the Game before you buy and may include applicable taxes.</p>
+
+    <h3>5. Ads and rewards</h3>
+    <p>Optional reward videos give the in-game bonus described on the button after the video finishes. If you bought "Remove ads" or the "VIP pack", the bonus is given straight away without a video. If an ad is not available, the reward may not be offered at that moment. We may change which rewards are offered.</p>
+
+    <h3>6. Simulation only</h3>
+    <p>The Game is fiction. Its roads, physics and vehicles are simplified for entertainment and must not be relied on for real driving. Please never play while driving a real vehicle.</p>
+
+    <h3>7. Updates and availability</h3>
+    <p>We may update, change or stop parts of the Game, including routes, prices and features. We will try to keep purchased items working after updates, but the Game may not be available on every device or at all times.</p>
+
+    <h3>8. Disclaimer and liability</h3>
+    <p>The Game is provided "as is" without warranties of any kind, to the extent permitted by law. To the extent permitted by law, the Developer is not liable for indirect or consequential losses, or for loss of in-game progress caused by device problems, reinstallation or uninstalling. Nothing in these Terms limits rights you have under consumer protection law that cannot be excluded.</p>
+
+    <h3>9. Trademarks</h3>
+    <p>Vehicles and companies in the Game are fictional. Any resemblance to real brands is coincidental, and no real brand endorses the Game.</p>
+
+    <h3>10. Governing law</h3>
+    <p>These Terms are governed by the laws of India. Disputes will be handled by the courts of India, without affecting any mandatory rights you have where you live.</p>
+
+    <h3>11. Credits</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Asset</th><th>Source</th><th>Licence</th></tr></thead>
+        <tbody>
+          <tr><td>Rock, grass and asphalt textures; day and night skies</td><td>Poly Haven</td><td>CC0</td></tr>
+          <tr><td>Particle images</td><td>Kenney</td><td>CC0</td></tr>
+          <tr><td>Engine idle and truck horn sounds</td><td>Pixabay (Lesiakower, soumages)</td><td>Pixabay Content Licence</td></tr>
+          <tr><td>Fonts (Saira)</td><td>Google Fonts</td><td>SIL Open Font Licence</td></tr>
+          <tr><td>Game engine</td><td>Godot Engine</td><td>MIT</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="doc" id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <span><b>Developer:</b> Tulshidas Uikey</span>
+      <span><b>Support and privacy requests:</b> <a href="mailto:bumpypeaks@gmail.com">bumpypeaks@gmail.com</a></span>
+      <span><b>Grievance officer (India):</b> the developer, at bumpypeaks@gmail.com</span>
+    </div>
+  </section>
+
+  <footer>© 2026 Tulshidas Uikey. Cargo Truck Simulator Driver.</footer>
+</div>
+</body></html>
